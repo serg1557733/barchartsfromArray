@@ -1,0 +1,23 @@
+.root {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: 20px;  
+}
+.axY {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 1px;
+    background-color:black;
+}
+.bar {
+    width: 20px;
+    background-color: aqua;
+    border:1px solid black;
+    margin-left: 1px;
+}
+.line {
+    height: 0;
+    width: 0;
+    
+}
