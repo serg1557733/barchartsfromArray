@@ -32,6 +32,14 @@ array.map((item, index) => {
      xIndex.classList.add('line');
      xIndex.innerText = index;
      div.style.height = `${height}px`;
+     if (item > 0 && item < 5) {
+         div.style.backgroundColor = 'green';
+     } else if (item >= 5 && item <= 10){
+        div.style.backgroundColor = 'yellow';
+    } else if (item > 10){
+        div.style.backgroundColor = 'red';
+    }
+    
      root.append(xIndex);
      root.append(div);
 });

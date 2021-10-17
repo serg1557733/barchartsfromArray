@@ -6,13 +6,27 @@
 }
 .axY {
     display: flex;
+    position: relative;
     flex-direction: column-reverse;
+    align-items: flex-end;
     width: 1px;
     background-color:black;
 }
+.axY span {
+    margin-right: 5px;
+    margin-bottom: 1px;
+}
+.axY span::after {
+    position: absolute;
+    content:'';
+    width: 5px;
+    height: 5px;
+    border-radius: 100%;
+    left: -2px;
+    background-color: rgb(5, 3, 3);
+}
 .bar {
     width: 20px;
-    background-color: aqua;
     border:1px solid black;
     margin-left: 1px;
 }
